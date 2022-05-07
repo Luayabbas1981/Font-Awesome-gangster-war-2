@@ -243,20 +243,23 @@ animation: appear 5s 3s forwards;
     bottom:67%;
     right: -55%;
     z-index: 5;
-    font-size: 5.2vw;
+    font-size: 6.2vw;
     animation: car2 7s  linear infinite , vanish .1s 22s forwards;
-   
-  }
+    -webkit-animation: car2 7s  linear infinite , vanish .1s 22s forwards;
+}
   .bus    {
     position: absolute;
     bottom:22%;
     left: -55%;
     z-index: 9;
     transform: rotateY(180deg);
-    font-size: 5.2vw;
+    font-size: 7vw;
     animation: car1 7s  linear infinite , vanish .1s 22s forwards;
-   
-  }
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
   .car1 {
     position: absolute;
     bottom:15%;
