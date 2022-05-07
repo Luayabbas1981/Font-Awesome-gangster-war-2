@@ -1,0 +1,529 @@
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(
+      180deg,
+      rgba(4, 20, 150, 1) 13%,
+      rgba(4, 2, 73, 1) 63%
+    );
+  }
+  h2 {
+    position: absolute;
+top: 30%;
+left: 42%;
+width: 300px;
+text-align: center;
+font-style: italic;
+opacity: 0;
+color: rgb(230, 230, 238);
+animation: head1 3s  , head2 .1s 3.1s forwards;
+user-select: none;
+}
+@keyframes head1 {
+to {
+  opacity: 1;
+  transform: rotateX(360deg) scale(1.5);
+}
+}
+@keyframes head2 {
+to{
+  display: none;
+}
+}
+
+main {
+opacity: 0;
+animation: appear 5s 3s forwards;
+}
+
+  .sky {
+    height: 20vh;
+  }
+  .sky .moon {
+    position: absolute;
+    color: whitesmoke;
+    text-shadow: 2px -2px 80px rgb(239 230 230);
+    top: 5%;
+    left: 10%;
+    font-size: 100px;
+    transform: rotate(-20deg);
+  }
+  .sky .star {
+    position: absolute;
+    color: whitesmoke;
+    text-shadow: 2px 0px 10px rgb(239 230 230);
+    font-size: 5px;
+  }
+  .sky .num1 {
+    top: 15%;
+    left: 40%;
+  }
+  .sky .num2 {
+    top: 7%;
+    left: 20%;
+  }
+  .sky .num3 {
+    top: 18%;
+    left: 60%;
+  }
+  .sky .num4 {
+    top: 15%;
+    left: 5%;
+  }
+  .sky .num5 {
+    top: 15%;
+    left: 75%;
+  }
+  .sky .num6 {
+    top: 30%;
+    left: 25%;
+  }
+  .sky .num7 {
+    top: 15%;
+    left: 88%;
+  }
+  .anttena {
+    position: relative
+    ;
+    top: 20px;
+    font-size: 60px;
+    color: rgb(84, 84, 84);
+    left: 44%;
+  }
+  .blocks {
+      position: relative
+      ;
+     top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  column-gap: 20px;
+    justify-content: space-around;
+    width: 20%;
+    height: 50vh;
+    
+    background: linear-gradient(
+      180deg,
+      #607d8b 13%,
+      rgb(48, 47, 47) 63%
+    );
+    animation: fire .3s 35s forwards;
+  }
+  @keyframes fire {
+    to{
+      background: linear-gradient(180deg, rgba(57,61,92,1) 13%, rgba(3,2,34,1) 63%);
+    }
+  }
+
+ 
+
+  .window {
+    position: relative;
+    overflow: hidden;
+    width: 35%;
+    height: 16%;
+    border: 3px solid black;
+    background-color: rgb(191, 166, 65);
+    animation: lamp 2s 25s forwards;
+  }
+
+  .window::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    left: 47%;
+    width: 3%;
+    height: 100%;
+    background-color: black;
+  }
+  .window:nth-child(odd) .ganger  {
+      position: absolute;
+      font-size: 2vw;
+      color: rgb(1, 69, 1);
+      left: -40%;
+      bottom: -7%;
+      animation:move 6s linear forwards ,move1 12s 12s linear forwards ,
+      move 12s 13s linear forwards ,move1 14s 22s linear forwards ;
+  }
+  .window:nth-child(even) .ganger {
+      position: absolute;
+      font-size: 2vw;
+      color: rgb(1, 69, 1);
+      left: -40%;
+      bottom:-7% ;
+      animation: move 5s 4.2s linear forwards , move1 12s 8s linear forwards ,
+      move 8s 16s linear forwards , move1 18s 12s linear forwards;
+  }
+  @keyframes move {
+    
+    30% {
+      left: 60%;
+    }
+  
+    100%{
+      left: 120%;
+    }
+
+  }
+  @keyframes move1 {
+    30% {
+      left: -60%;
+    }
+  
+    100%{
+      left: -120%;
+    }
+    
+    }
+    @keyframes lamp {
+      to{
+        background-color: rgb(97, 86, 38) ;
+      }
+    }
+    .platfor1 {
+      position: absolute;
+      bottom: -100px;
+    }
+    .platform {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(213, 178, 131);
+  }
+    .street {
+    position: relative;
+    
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(94, 93, 93);
+  }
+
+    .street .zebra {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  .zebra > div {
+    position: relative;
+    top: 60px;
+    width: 110px;
+    height: 10px;
+    background-color: white;
+  }
+  .not {
+    position: absolute;
+    bottom:70%;
+    right: -55%;
+    z-index: 5;
+    font-size: 6.2vw;
+    animation: not 2.8s 35.5s linear forwards ;
+   
+  }
+  .police   {
+    position: absolute;
+    bottom:70%;
+    left: -55%;
+    z-index: 9;
+    transform: rotateY(180deg);
+    font-size: 5.4vw;
+    animation: not1 2.8s 35.5s linear forwards;
+   
+  }
+  .lkw {
+    position: absolute;
+    bottom:67%;
+    right: -55%;
+    z-index: 5;
+    font-size: 5.2vw;
+    animation: car2 7s  linear infinite , vanish .1s 22s forwards;
+   
+  }
+  .bus    {
+    position: absolute;
+    bottom:22%;
+    left: -55%;
+    z-index: 9;
+    transform: rotateY(180deg);
+    font-size: 5.2vw;
+    animation: car1 7s  linear infinite , vanish .1s 22s forwards;
+   
+  }
+  .car1 {
+    position: absolute;
+    bottom:15%;
+    left: -20%;
+    z-index: 9;
+    color: rgb(3, 14, 131);
+    font-size: 5.2vw;
+    animation: car1 5s  linear infinite , vanish .1s 24.2s forwards;
+   
+  }
+  .car1::after {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height:.7vw;
+    top: 42%;
+    left: 85%;
+    border-radius: 50%;
+    background-color: yellow;
+    
+ 
+  }
+  .car1::before {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height: .7vw;
+    top: 40%;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    
+  
+  }
+  .car2 {
+    position: absolute;
+    bottom:60%;
+    right: -20%;
+    z-index: 5;
+    transform: rotateY(180deg);
+    color: rgb(21, 62, 14);
+    font-size: 5.2vw;
+    animation: car2 5s  linear infinite , vanish .1s 24.2s forwards;
+   
+  }
+  .car2::after {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height:.7vw;
+    top: 42%;
+    left: 85%;
+    border-radius: 50%;
+    background-color: yellow;
+    
+     
+  }
+  .car2::before {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height: .7vw;
+    top: 40%;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    
+     
+  }
+    .car {
+    position: absolute;
+    bottom:15%;
+    left: -20%;
+    color: rgb(33, 1, 1);
+    font-size: 5.2vw;
+    animation: car 2s 25s linear forwards ,escape 1.8s 33s linear forwards;
+   
+  }
+  .car::after {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height:.7vw;
+    top: 42%;
+    left: 85%;
+    border-radius: 50%;
+    background-color: yellow;
+    
+    animation: blink .8s 6 27.3s   ;
+  }
+  .car::before {
+    content: "";
+    position: absolute;
+    width: .7vw;
+    height: .7vw;
+    top: 40%;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    
+    animation: blink .8s 6 27.3s  ;
+  }
+
+  @keyframes car {
+    to{
+      left: 20%;
+    }
+  }
+  @keyframes escape {
+    to{
+      left: 120%;
+    }
+  }
+  @keyframes blink {
+    from {
+      opacity: 0;
+      
+    }
+    to {
+      opacity: 1;
+      background-color: rgb(251, 143, 28);
+      box-shadow: 0px 0px 10px rgb(251, 143, 28),0px 0px 20px rgb(251, 143, 28),
+      0px 0px 30px rgb(251, 143, 28) ,0px 0px 40px rgb(251, 143, 28) ;
+    }
+  }
+  @keyframes car1 {
+    to {
+      left: 120%;
+    }
+  }
+  @keyframes car2 {
+    to {
+      right: 120%;
+    }
+  }
+  @keyframes not {
+    to {
+      right: 40%;
+    }
+  }
+  @keyframes not1 {
+    to {
+      left: 35%;
+    }
+  }
+  @keyframes vanish {
+    to {
+      opacity: 0;
+    }
+  }
+  .street .ganger {
+    position: absolute;
+    left: 22%;
+    top: 17%;
+    opacity: 0;
+    z-index: 4;
+    font-size: 2.7vw;
+    color: rgb(132, 3, 3);
+    animation: red1 .1s 27.4s linear forwards, red2 3s 26s linear forwards,
+    red3 3s 29s linear forwards , red4 .2s 32s forwards ;
+  }
+  @keyframes red1 {
+    to {
+      opacity: 1;
+      
+    }
+  }
+  @keyframes red2 {
+    to {
+    left: 40%;
+    top: -39%;
+      
+    }
+  }
+  @keyframes red3 {
+    to {
+      left: 22%;
+    top: 17%;
+      
+    }
+  }
+  @keyframes red4 {
+    to {
+      opacity: 0;
+      
+    }
+  }
+  
+  .bomb {
+    position: absolute;
+    left: 39.5%;
+    top: -44%;
+    font-size: 1.8vw;
+    opacity: 0;
+    z-index: 4;
+    animation: appear .2s 29.2s forwards , vanish .1s 35s forwards;
+  }
+  .bom {
+    position: absolute;
+    left: 37%;
+    top: -110%;
+    font-size: 6.8vw;
+    opacity: 0;
+    z-index: 4;
+    animation: appear .2s 35s forwards , vanish .1s 35.5s forwards;
+
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .trees >div {
+   position: absolute;
+  bottom: 22%;
+  font-size: 6vw;
+  }
+  .trees >div:nth-child(1){
+    left: 7%;
+  }
+  .trees >div:nth-child(2){
+    left: 25%;
+  }
+  .trees >div:nth-child(3){
+    left: 46.5%;
+  }
+  .trees >div:nth-child(4){
+    left: 68%;
+  }
+  .trees >div:nth-child(5){
+    left: 88%;
+  }
+
+
+  .end {
+position: relative;
+bottom: -300%;
+left: 7%;
+display: flex;
+color: rgb(213, 213, 208);
+font-size: 40px;
+font-style: italic; 
+user-select: none;
+opacity: 1;
+
+}
+.end > div {
+position: absolute;
+}
+.blue {
+width:350px ;
+height: 50px;
+background-color: rgb(4 2 75);
+animation: end1 4s 39.5s forwards;
+
+
+}
+@keyframes end {
+to {
+  opacity: 0;
+}
+}
+@keyframes end1 {
+to {
+ transform: translateX(350px);
+}
+}
+
+ 
