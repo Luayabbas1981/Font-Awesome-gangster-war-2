@@ -8,6 +8,7 @@ body {
       rgba(4, 20, 150, 1) 13%,
       rgba(4, 2, 73, 1) 63%
     );
+    user-select: none;    
   }
   h2 {
     position: absolute;
