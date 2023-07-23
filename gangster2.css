@@ -530,7 +530,7 @@ main {
 }
 @media(max-width:767px){
   .sky{
-    height: 15vh;
+    height: 17vh;
   }
   h2{
     font-size: 1rem;
