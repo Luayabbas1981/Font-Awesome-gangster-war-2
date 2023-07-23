@@ -547,11 +547,14 @@ main {
     font-size: 0.3rem;
   }
   .moon i{
-    font-size: 0.8rem;
+    font-size: 1.8rem;
   }
   .platform{
     top: -4rem;
     height: 6vh;
+  }
+  .ganger i{
+    font-size: 1.7rem;
   }
   .platform .trees >div{
     font-size: 2.5rem;
@@ -560,7 +563,7 @@ main {
     top: -4rem;
     height: 26vh;
   }
-  .street .car1, .car ,.not,.police{
+  .street .car1, .car ,.not,.police {
     font-size: 3.3rem;
   }
   .street .car2,.lkw{
@@ -573,5 +576,28 @@ main {
   }
   .zebra >div{
     top: 80px;
+  }
+  .bomb{
+    font-size: 1rem;
+    top: -30%;
+  }
+  .end{
+    top: 30%;
+    left: 35%;
+    font-size: 1.2rem;
+  }
+  .blue{
+    background: linear-gradient( 180deg, #041496 13%, rgb(13 9 151) 63% );
+
+  }
+  @keyframes not {
+    to {
+      right: 20%;
+    }
+  }
+  @keyframes not1 {
+    to {
+      left: 20%;
+    }
   }
 }
