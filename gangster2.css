@@ -550,6 +550,18 @@ main {
     top: -60px;
     font-size: 3rem;
   }
+  .car::before,.car::after{
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+  .car1::before,.car1::after{
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+  .car::before,.car2::after{
+    width: 0.45rem;
+    height: 0.45rem;
+  }
   .star{
     font-size: 0.3rem;
   }
