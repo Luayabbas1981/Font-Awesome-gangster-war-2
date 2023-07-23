@@ -558,6 +558,7 @@ main {
   }
   .platform .trees >div{
     font-size: 4rem;
+  
   }
   .street{
     top: -4rem;
@@ -589,6 +590,12 @@ main {
   .blue{
     background: linear-gradient( 180deg, #041496 13%, rgb(13 9 151) 63% );
 
+  }
+  .trees > div:nth-child(1){
+    left: -5%;
+  }
+  .trees > div:nth-child(2){
+    left: 13%;
   }
   @keyframes not {
     to {
