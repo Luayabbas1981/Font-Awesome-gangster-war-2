@@ -12,7 +12,7 @@ body {
 }
 h2 {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 42%;
   width: 300px;
   text-align: center;
@@ -526,5 +526,52 @@ main {
 @keyframes end1 {
   to {
     transform: translateX(350px);
+  }
+}
+@media(max-width:767px){
+  h2{
+    font-size: 1rem;
+    left: 10%;
+  }
+  .block{
+    width: 80%;
+  }
+  .blocks{
+    top: -60px;
+  }
+  .anttena{
+    top: -60px;
+    font-size: 3rem;
+  }
+  .star{
+    font-size: 0.3rem;
+  }
+  .moon i{
+    font-size: 0.8rem;
+  }
+  .platform{
+    top: -4rem;
+    height: 6vh;
+  }
+  .platform .trees >div{
+    font-size: 2.5rem;
+  }
+  .street{
+    top: -4rem;
+    height: 26vh;
+  }
+  .street .car1, .car ,.not,.police{
+    font-size: 3.3rem;
+  }
+  .street .car2,.lkw{
+    bottom: 73%;
+    font-size: 3.3rem;
+  }
+  .bus{
+    font-size: 4.2rem;
+
+  }
+  .zebra >div{
+    top: 80px;
   }
 }
