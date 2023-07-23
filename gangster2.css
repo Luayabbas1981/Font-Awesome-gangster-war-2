@@ -560,6 +560,9 @@ main {
   .ganger i{
     font-size: 1.7rem;
   }
+  .bom{
+    top: -60%;
+  }
   .platform .trees >div{
     font-size: 4rem;
   
